@@ -23,7 +23,7 @@ def FRL_train(tr_loaders, te_loader):
     args.bn_type="NonAffineNoStatsBN"    
     
     n_attackers = int(args.nClients * args.at_fractions)
-    sss = "fraction of maliciou clients: %.2f | total number of malicious clients: %d"%(args.at_fractions,
+    sss = "fraction of malicious clients: %.2f | total number of malicious clients: %d"%(args.at_fractions,
                                                                                         n_attackers)
     print (sss)
     with (args.run_base_dir / "output.txt").open("a") as f:
@@ -117,7 +117,7 @@ def FedAVG(tr_loaders, te_loader):
     args.bn_type="NonAffineNoStatsBN"    
     
     n_attackers = int(args.nClients * args.at_fractions)
-    sss = "fraction of maliciou clients: %.2f | total number of malicious clients: %d"%(args.at_fractions,
+    sss = "fraction of malicious clients: %.2f | total number of malicious clients: %d"%(args.at_fractions,
                                                                                         n_attackers)
     print (sss)
     with (args.run_base_dir / "output.txt").open("a") as f:
